@@ -5,58 +5,57 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-#app {
+    }
+    
+    #app {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     max-width: 500px;
     width: 90%;
-}
-
-.to-do {
+    }
+    
+    .to-do {
     color: #007bff;
-}
-
-.done {
+    }
+    
+    .done {
     text-decoration: line-through;
     color: #28a745;
-}
-
-button {
+    }
+    
+    button {
     margin-left: 5px;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
-}
-
-.done-btn {
+    }
+    
+    .done-btn {
     background-color: #28a745;
     color: white;
-}
-
-.delete-btn {
+    }
+    
+    .delete-btn {
     background-color: #dc3545;
     color: #fff;
-}
-
-button:hover {
+    }
+    
+    button:hover {
     opacity: 0.9;
-}
-
-@media (min-width: 768px) {
-    #app {
-        width: 50%;
     }
-}
-
-@media (min-width: 1200px) {
+    
+    @media (min-width: 768px) {
     #app {
-        width: 40%;
+    width: 50%;
     }
-}
-
+    }
+    
+    @media (min-width: 1200px) {
+    #app {
+    width: 40%;
+    }
+    }
