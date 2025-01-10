@@ -5,57 +5,96 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    }
-    
-    #app {
+    margin: 0;
+  }
+  
+  #app {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 90%;
-    }
-    
-    .to-do {
+  }
+  
+  .to-do {
     color: #007bff;
-    }
-    
-    .done {
+  }
+  
+  .done {
     text-decoration: line-through;
     color: #28a745;
-    }
-    
-    button {
+  }
+  
+  button {
     margin-left: 5px;
-    padding: 5px 10px;
+    padding: 10px 15px; /* ボタンのサイズを大きく調整 */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
-    }
-    
-    .done-btn {
+    font-size: 1rem; /* ボタンの文字サイズを拡大 */
+  }
+  
+  .done-btn {
     background-color: #28a745;
     color: white;
-    }
-    
-    .delete-btn {
+  }
+  
+  .delete-btn {
     background-color: #dc3545;
     color: #fff;
-    }
-    
-    button:hover {
+  }
+  
+  button:hover {
     opacity: 0.9;
-    }
-    
-    @media (min-width: 768px) {
+  }
+  
+  #task-input {
+    padding: 10px; /* 入力フィールドの内側余白を調整 */
+    font-size: 1rem; /* 文字サイズを少し拡大 */
+    width: calc(100% - 22px); /* 入力フィールドの幅を調整 */
+    margin-bottom: 10px; /* 下に余白を追加 */
+  }
+  
+  #task-list li {
+    font-size: 1rem; /* タスクリストの文字サイズを調整 */
+    line-height: 1.5; /* 読みやすさのため行間を広げる */
+  }
+  
+  #filter-area button {
+    padding: 10px 15px; /* フィルターボタンのサイズを調整 */
+    font-size: 1rem; /* フィルターボタンの文字サイズを調整 */
+  }
+  
+  /* デスクトップ用の調整 */
+  @media (min-width: 768px) {
     #app {
-    width: 50%;
+      width: 60%; /* パソコン版で少し幅を広げる */
     }
+  
+    #task-input {
+      font-size: 1.1rem; /* 入力フィールドの文字サイズをさらに拡大 */
+      padding: 12px; /* 内側余白を広げる */
     }
-    
-    @media (min-width: 1200px) {
+  
+    button {
+      font-size: 1.1rem; /* ボタンの文字サイズをさらに拡大 */
+      padding: 12px 20px; /* ボタンの内側余白を広げる */
+    }
+  
+    #task-list li {
+      font-size: 1.1rem; /* タスクリストの文字サイズを拡大 */
+    }
+  
+    #filter-area button {
+      font-size: 1.1rem; /* フィルターボタンの文字サイズを拡大 */
+      padding: 12px 20px; /* フィルターボタンの内側余白を広げる */
+    }
+  }
+  
+  @media (min-width: 1200px) {
     #app {
-    width: 40%;
+      width: 50%; /* さらに幅を広げて使いやすく */
     }
-    }
+  }
